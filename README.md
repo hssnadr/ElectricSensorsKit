@@ -1,4 +1,5 @@
 ## Resistive sensor Kit
+![alt tag](https://github.com/hssnadr/MotionLab_KIT/blob/master/ResistiveSensor.jpg) 
 ```
 #define SENS A0
 
@@ -13,10 +14,10 @@ void loop() {
   delay(1);
 }
 ```
-![alt tag](https://github.com/hssnadr/MotionLab_KIT/blob/master/ResistiveSensor.jpg) 
 
 ## Capacitive Sensor Kit
 ### Single
+![alt tag](https://github.com/hssnadr/MotionLab_KIT/blob/master/CapacitiveSensor_01.jpg) 
 ```
 #include <CapacitiveSensor.h>
 
@@ -36,11 +37,11 @@ void loop() {
   delay(10);
 }
 ```
-![alt tag](https://github.com/hssnadr/MotionLab_KIT/blob/master/CapacitiveSensor_01.jpg) 
 ### Chain
 ![alt tag](https://github.com/hssnadr/MotionLab_KIT/blob/master/CapacitiveSensor_02.jpg) 
 
 ## Led Display Kit
+![alt tag](https://github.com/hssnadr/MotionLab_KIT/blob/master/LedDisplay.jpg) 
 ```
 #include <Adafruit_NeoPixel.h>
 
@@ -80,4 +81,3 @@ void stripOff(){
   }
 }
 ```
-![alt tag](https://github.com/hssnadr/MotionLab_KIT/blob/master/LedDisplay.jpg) 
