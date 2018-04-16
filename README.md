@@ -16,6 +16,8 @@ void loop() {
 ```
 
 ## Capacitive Sensor Kit
+* Arduino/Sketch/Include Library/Manage libraries...
+* Seek and install "CapacitiveSensor"
 ### Single
 ![alt tag](https://github.com/hssnadr/MotionLab_KIT/blob/master/CapacitiveSensor_01.jpg) 
 ```
@@ -41,6 +43,8 @@ void loop() {
 ![alt tag](https://github.com/hssnadr/MotionLab_KIT/blob/master/CapacitiveSensor_02.jpg) 
 
 ## Led Display Kit
+* Arduino/Sketch/Include Library/Manage libraries...
+* Seek and install "Adafruit NeoPixel"
 ![alt tag](https://github.com/hssnadr/MotionLab_KIT/blob/master/LedDisplay.jpg) 
 ```
 #include <Adafruit_NeoPixel.h>
