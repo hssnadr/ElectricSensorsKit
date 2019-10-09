@@ -14,21 +14,21 @@ void setup() {
 }
 
 void loop() {
-  // read and print resistor value
-  int sensorValue = analogRead(SENS);
-  Serial.println(sensorValue); 
-  
-  stripOff();
-  val = map(val,1015,990, 0, NPIX);
-  val = constrain(val,0, NPIX);
+  // Read and print tension value
+  int _vSens = analogRead(SENS);
+  Serial.println(_vSens); 
 
-  for(int i=0; i<val; i++){
-    // colors are set based on the Red-Green-Blue code with values constrained between 0 and 255
-    //strip.setPixelColor(i, strip.Color(255*val/NPIX,255-255*val/NPIX,0));  // set a shade of color from green to red
-    strip.setPixelColor(i, strip.Color(255,255,255)); 
+  // Map Vsens value to led strip
+  _vSens = map(_vSens,1015,990, 0, NPIX);
+  _vSens = constrain(_vSens,0, NPIX);
+
+  // Set strip display
+  stripOff();                                           // turn off all leds
+  for(int i=0; i<_vSens; i++){
+    strip.setPixelColor(i, strip.Color(255,255,255));   // turn on wanted leds
   }
 
-  // display new led colors
+  // Display
   strip.show();
   delay(5);
 }
