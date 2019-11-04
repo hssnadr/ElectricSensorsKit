@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="_x30_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1350.5 420.6" style="enable-background:new 0 0 1350.5 420.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1D1D1B;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Roboto-Medium';}
+	.st3{font-size:23.094px;}
+	.st4{font-size:23.09px;}
+	.st5{fill:none;stroke:#FF0000;stroke-width:1.000000e-03;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{font-family:'Roboto-Black';}
+	.st7{font-size:21.8443px;}
+	.st8{fill:none;stroke:#1D1D1B;stroke-width:0.4876;stroke-linecap:round;stroke-miterlimit:10;}
+	.st9{fill:none;stroke:#1D1D1B;stroke-width:0.4876;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#1D1D1B;stroke-width:0.4876;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		
+			<ellipse transform="matrix(0.3201 -0.9474 0.9474 0.3201 505.4142 1170.5575)" class="st0" cx="1068.3" cy="233.1" rx="20.9" ry="20.9"/>
+		<text transform="matrix(1 0 0 1 1060.9268 240.3052)" class="st1 st2 st3">B</text>
+	</g>
+	<text transform="matrix(1 0 0 1 1106.5764 240.3047)" class="st2 st4"> Case</text>
+</g>
+<g>
+	<path class="st5" d="M526.2,203.5c0-2.7-2.2-5-5-5c-2.7,0-5,2.2-5,5c0,2.7,2.2,5,5,5C524,208.4,526.2,206.2,526.2,203.5
+		L526.2,203.5z"/>
+	<path class="st5" d="M929,203.5c0-2.7-2.2-5-5-5c-2.7,0-5,2.2-5,5c0,2.7,2.2,5,5,5C926.8,208.4,929,206.2,929,203.5L929,203.5z"/>
+	<path class="st5" d="M123,203.5c0-2.7-2.2-5-5-5c-2.7,0-5,2.2-5,5c0,2.7,2.2,5,5,5C120.7,208.4,123,206.2,123,203.5L123,203.5z"/>
+	<path class="st5" d="M526.2,262.8c0,2.7-2.2,5-5,5c-2.7,0-5-2.2-5-5c0-2.7,2.2-5,5-5C524,257.9,526.2,260.1,526.2,262.8
+		L526.2,262.8z"/>
+	<path class="st5" d="M929,262.8c0,2.7-2.2,5-5,5c-2.7,0-5-2.2-5-5c0-2.7,2.2-5,5-5C926.8,257.9,929,260.1,929,262.8L929,262.8z"/>
+	<path class="st5" d="M123,262.8c0,2.7-2.2,5-5,5c-2.7,0-5-2.2-5-5c0-2.7,2.2-5,5-5C120.7,257.9,123,260.1,123,262.8L123,262.8z"/>
+	<path class="st5" d="M103.8,262.8c0,7.8,6.3,14.2,14.2,14.2h806.1c7.8,0,14.2-6.3,14.2-14.2v-59.4c0-7.8-6.3-14.2-14.2-14.2H118
+		c-7.8,0-14.2,6.3-14.2,14.2h0L103.8,262.8z"/>
+</g>
+<text transform="matrix(1 0 0 1 1124.0154 63.3075)" class="st6 st7">3mm thick</text>
+<line class="st8" x1="1350.5" y1="45.7" x2="1247.6" y2="45.7"/>
+<line class="st8" x1="1350.5" y1="68.1" x2="1247.6" y2="68.1"/>
+<g>
+	<polyline class="st9" points="1267.7,51.2 1262.2,45.7 1256.6,51.2 	"/>
+	<polyline class="st9" points="1267.7,62.6 1262.2,68.1 1256.6,62.6 	"/>
+	<line class="st9" x1="1262.2" y1="45.7" x2="1262.2" y2="68.1"/>
+</g>
+<circle class="st0" cx="1103.5" cy="56.9" r="2.2"/>
+<text transform="matrix(1 0 0 1 77.2709 63.3075)" class="st6 st7">Plexyglass</text>
+<line class="st10" x1="0" y1="56.9" x2="60.3" y2="56.9"/>
+<line class="st10" x1="195" y1="56.9" x2="1103.5" y2="56.9"/>
+<circle class="st0" cx="60.3" cy="56.9" r="2.2"/>
+</svg>

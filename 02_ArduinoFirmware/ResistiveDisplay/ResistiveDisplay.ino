@@ -15,16 +15,16 @@ void setup() {
 
 void loop() {
   // Read and print tension value
-  int _vSens = analogRead(SENS);
-  Serial.println(_vSens); 
+  int vSens_ = analogRead(SENS);
+  Serial.println(vSens_); 
 
   // Map Vsens value to led strip
-  _vSens = map(_vSens,1015,990, 0, NPIX);
-  _vSens = constrain(_vSens,0, NPIX);
+  vSens_ = map(vSens_,1015,990, 0, NPIX);
+  vSens_ = constrain(vSens_,0, NPIX);
 
   // Set strip display
   stripOff();                                           // turn off all leds
-  for(int i=0; i<_vSens; i++){
+  for(int i=0; i<vSens_; i++){
     strip.setPixelColor(i, strip.Color(255,255,255));   // turn on wanted leds
   }
 
