@@ -1,8 +1,11 @@
 #include <Adafruit_NeoPixel.h>
 
+//Sensor
 #define SENS A0
+int rangeMin = 1015 ;  // rangeMin and rangeMax must be adapt in function of the wanted behavior (more or less sensitivity)
+int rangeMax = 990 ;
 
-//led strip
+//Led strip
 #define DIN 8          // pin controling the led strip behavior
 #define NPIX   15      // number of pixels used in the strip
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NPIX, DIN, NEO_RGB + NEO_KHZ800);  // replace NEO_RGB by NEO_GRBW if colors are not right
@@ -19,7 +22,7 @@ void loop() {
   Serial.println(vSens_); 
 
   // Map Vsens value to led strip
-  vSens_ = map(vSens_,1015,990, 0, NPIX);
+  vSens_ = map(vSens_,rangeMin, rangeMax, 0, NPIX);
   vSens_ = constrain(vSens_,0, NPIX);
 
   // Set strip display
@@ -28,7 +31,7 @@ void loop() {
     strip.setPixelColor(i, strip.Color(255,255,255));   // turn on wanted leds
   }
 
-  // Display
+  // Display leds
   strip.show();
   delay(5);
 }

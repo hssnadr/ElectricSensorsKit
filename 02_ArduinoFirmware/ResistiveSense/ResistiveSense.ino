@@ -5,7 +5,7 @@ void setup() {
 }
 
 void loop() {
-  // read and print resistor value
+  // Read and print resistor value
   int sensorValue = analogRead(SENS);
   Serial.println(sensorValue);
   delay(1);

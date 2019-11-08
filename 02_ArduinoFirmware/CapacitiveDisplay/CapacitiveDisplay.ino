@@ -1,16 +1,17 @@
+#include <CapacitiveSensor.h>
 #include <Adafruit_NeoPixel.h>
 
-//led strip
+// Sensor
+#define SENSIN 2
+#define SENSOUT 4
+CapacitiveSensor   capsens = CapacitiveSensor(SENSIN,SENSOUT);
+int rangeMin = 700 ;  // rangeMin and rangeMax must be adapt in function of the wanted behavior (more or less sensitivity)
+int rangeMax = 2000 ;
+
+// Led strip
 #define DIN 8          // pin controling the led strip behavior
 #define NPIX   15      // number of pixels used in the strip
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NPIX, DIN, NEO_RGB + NEO_KHZ800);  // replace NEO_RGB by NEO_GRBW if colors are not right
-
-#include <CapacitiveSensor.h>
-
-#define SENSIN 2
-#define SENSOUT 4
-
-CapacitiveSensor   capsens = CapacitiveSensor(SENSIN,SENSOUT);
 
 void setup() {
   //led strip setup
@@ -22,21 +23,23 @@ void setup() {
 }
 
 void loop() {
+  // Sens values
   long val_ =  capsens.capacitiveSensor(30);
   Serial.println(val_); 
   delay(10);
 
-  stripOff();
-  val_ = map(val_,700,2000, 0, NPIX);
+  // Map values
+  val_ = map(val_,rangeMin, rangeMax, 0, NPIX);
   val_ = constrain(val_, 0, NPIX);
 
+  // Set strip display
+  stripOff();                                           // turn off all leds
   for(int i=0; i<val_; i++){
     // colors are set based on the Red-Green-Blue code with values constrained between 0 and 255
-    //strip.setPixelColor(i, strip.Color(255*val/NPIX,255-255*val/NPIX,0));  // set a shade of color from green to red
-    strip.setPixelColor(i, strip.Color(200,200,200));  // set a shade of color from green to red
+    strip.setPixelColor(i, strip.Color(200,200,200));
   }
 
-  // display new led colors
+  // Display leds
   strip.show();
   delay(5);
 }
