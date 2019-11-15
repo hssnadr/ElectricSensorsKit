@@ -3,3 +3,4 @@
 # Sensor kit
 
 This project is part of the Movuino project: http://www.movuino.com/  
+Sensor Kit project presentation: http://www.movuino.com/index.php/portfolio/sensors-kit/
